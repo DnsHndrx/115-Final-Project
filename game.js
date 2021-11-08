@@ -33,3 +33,19 @@ if (aiOptions[index] == "scissors" && playerChoice == "scissors") {
 } 
 
 alert(aiChoice)
+
+var icon1 = document.getElementsByTagName("i")[0];
+var icon2 = document.getElementsByTagName("i")[1];
+var icon3 = document.getElementsByTagName("i")[2];
+
+icon1.addEventListener("click",function(){
+     icon1.classList.toggle("clicked")
+});
+
+icon2.addEventListener("click",function(){
+    icon2.classList.toggle("clicked")
+});
+
+icon3.addEventListener("click",function(){
+    icon3.classList.toggle("clicked")
+});
