@@ -21,6 +21,11 @@ body {
     border-radius: 5px;
 }
 
+.player_options {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .computer {
     width: 50%;
     margin: 0 5px;
@@ -30,6 +35,15 @@ body {
     background-color: #D3D3D3;
     padding: 20px;
     border-radius: 5px;
+}
+
+.computer_options {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clicked {
+    color: #D3D3D3;
 }
 
 h1 {
