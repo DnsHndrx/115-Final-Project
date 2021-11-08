@@ -18,6 +18,7 @@ body {
 .player_head {
     background-color: #D3D3D3;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .computer {
@@ -28,6 +29,7 @@ body {
 .computer_head {
     background-color: #D3D3D3;
     padding: 20px;
+    border-radius: 5px;
 }
 
 h1 {
