@@ -8,28 +8,28 @@ var aiOptions = [ "rock",
 var index = Math.floor(Math.random() * aiOptions.length);
 
 if (aiOptions[index] == "rock" && playerChoice == "paper") {
-    aiChoice = "Yes! You won! " + aiOptions[index] + playerChoice;
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
 }
 if (aiOptions[index] == "paper" && playerChoice == "scissors") {
-    aiChoice = "Yes! You won! " + aiOptions[index] + playerChoice;
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
 }
 if (aiOptions[index] == "scissors" && playerChoice == "rock") {
-    aiChoice = "Yes! You won! " + aiOptions[index] + playerChoice;
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
 } 
 if (aiOptions[index] == "scissors" && playerChoice == "paper") {
-    aiChoice = "Sorry. You lose " + aiOptions[index] + playerChoice;
+    aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
 }
 if (aiOptions[index] == "paper" && playerChoice == "rock") {
-    aiChoice = "Sorry. You lose " + aiOptions[index] + playerChoice;
+    aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
 }
 if (aiOptions[index] == "rock" && playerChoice == "rock") {
-    aiChoice = "its a draw " + aiOptions[index] + playerChoice;
+    aiChoice = "its a draw " + aiOptions[index], + playerChoice;
 }
 if (aiOptions[index] == "paper" && playerChoice == "paper") {
-    aiChoice = "its a draw " + aiOptions[index] + playerChoice;
+    aiChoice = "its a draw " + aiOptions[index], + playerChoice;
 }
 if (aiOptions[index] == "scissors" && playerChoice == "scissors") {
-    aiChoice = "its a draw " + aiOptions[index] + playerChoice;
+    aiChoice = "its a draw " + aiOptions[index], + playerChoice;
 } 
 
 alert(aiChoice)
