@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.player {
+    width: 50%;
+    margin: 0 5px;
+}
+
+.player_head {
+    background-color: #D3D3D3;
+    padding: 20px;
+}
+
+.computer {
+    width: 50%;
+    margin: 0 5px;
+}
+
+.computer_head {
+    background-color: #D3D3D3;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+}
