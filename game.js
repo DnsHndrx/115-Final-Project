@@ -1,3 +1,4 @@
+
 var playerChoice = "rock";
 var aiChoice = null;
 
@@ -5,7 +6,8 @@ var aiOptions = [ "rock",
 "paper",
 "scissors"];
 
-var index = Math.floor(Math.random() * aiOptions.length);
+var icon = document.querySelectorAll('i');
+var p = document.getElementById("message")
 
 if (aiOptions[index] == "rock" && playerChoice == "paper") {
     aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
@@ -30,25 +32,27 @@ if (aiOptions[index] == "rock" && playerChoice == "rock") {
 }
 if (aiOptions[index] == "paper" && playerChoice == "paper") {
     aiChoice = "its a draw " + aiOptions[index], + playerChoice;
+
+function playerChooses(element){
+    if(element.matches('.clicked.rock')){
+        playerChoice = 'rock';
+        console.log('this is rock move')
+    } else if(element.matches('.clicked.paper')){
+        playerChoice = 'paper'
+        console.log('this is paper move')
+    } else {
+        playerChoice = 'scissors'
+        console.log('this is scissors move')
+    }
 }
-if (aiOptions[index] == "scissors" && playerChoice == "scissors") {
-    aiChoice = "its a draw " + aiOptions[index], + playerChoice;
-} 
 
-alert(aiChoice)
+console.log(playerChoice)
 
-var icon1 = document.getElementsByTagName("i")[0];
-var icon2 = document.getElementsByTagName("i")[1];
-var icon3 = document.getElementsByTagName("i")[2];
-
-icon1.addEventListener("click",function(){
-     icon1.classList.toggle("clicked")
-});
-
-icon2.addEventListener("click",function(){
-    icon2.classList.toggle("clicked")
-});
-
-icon3.addEventListener("click",function(){
-    icon3.classList.toggle("clicked")
-});
+function changeColor(element){
+    element.classList.add('clicked')
+    for(let i = 0; i < 3; i++){
+        if(icon[i].classList.contains('clicked') == false){
+            icon[i].style.visibility = 'hidden'
+        }
+    }
+}}

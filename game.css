@@ -3,11 +3,16 @@ body {
 }
 
 .container {
-    display: flex;
     text-align: center;
     width: 1140px;
     margin: 0 auto;
+    height: 90%;
+}
+
+.game {
+    display: flex;
     justify-content: space-around;
+    height: 90%;
 }
 
 .player {
@@ -43,10 +48,16 @@ body {
 }
 
 .clicked {
-    color: #D3D3D3;
+    color: #A5A5A5;
 }
 
 h1 {
     text-align: center;
     padding: 5px;
+}
+
+button {
+    bottom: 0;
+    width: 20%;
+    padding: 5px 10px; 
 }

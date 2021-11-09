@@ -9,30 +9,32 @@
     </body>
     <h1>Rock Paper Scissors</h1>
     <div class="container">
-        <div class="player">
-            <div class="player_head">
-                <h1>Player</h1>
+        <div class="game">
+            <div class="player">
+                <div class="player_head">
+                    <h1>Player</h1>
+                </div>
+                <h2>Player chooses: </h2>
+                <div class="player_options">
+                    <i class="fas fa-3x fa-hand-rock rock" onclick="changeColor(this); playerChooses(this)"></i>
+                    <i class="fas fa-3x fa-hand-paper paper" onclick="changeColor(this); playerChooses(this)"></i>
+                    <i class="fas fa-3x fa-hand-scissors" onclick="changeColor(this); playerChooses(this)"></i>
+                </div>
             </div>
-            <h2>Player chooses: </h2>
-            <div class="player_options">
-                <i class="fas fa-3x fa-hand-rock"></i>
-                <i class="fas fa-3x fa-hand-paper"></i>
-                <i class="fas fa-3x fa-hand-scissors"></i>
+            <div class="computer">
+                <div class="computer_head">
+                    <h1>Computer</h1>
+                </div>
+                <h2>Computer chooses:</h2>
+                <div class="computer_options">
+                    <i class="fas fa-3x fa-hand-rock rock"></i>
+                    <i class="fas fa-3x fa-hand-paper paper"></i>
+                    <i class="fas fa-3x fa-hand-scissors scissors"></i>
+                </div>
             </div>
-            <span></span>
         </div>
-        <div class="computer">
-            <div class="computer_head">
-                <h1>Computer</h1>
-            </div>
-            <h2>Computer chooses:</h2>
-            <div class="computer_options">
-                <i class="fas fa-3x fa-hand-rock"></i>
-                <i class="fas fa-3x fa-hand-paper"></i>
-                <i class="fas fa-3x fa-hand-scissors"></i>
-            </div>
-           <span></span>
-        </div>
+        <p id="message"></p>
+        <button onclick="play()">Play</button>
     </div>
 
     <script src="game.js"></script>
