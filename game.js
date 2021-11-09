@@ -22,6 +22,9 @@ if (aiOptions[index] == "scissors" && playerChoice == "paper") {
 if (aiOptions[index] == "paper" && playerChoice == "rock") {
     aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
 }
+if (aiOptions[index] == "rock" && playerChoice == "scissors") {
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+}
 if (aiOptions[index] == "rock" && playerChoice == "rock") {
     aiChoice = "its a draw " + aiOptions[index], + playerChoice;
 }
