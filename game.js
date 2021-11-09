@@ -9,43 +9,29 @@ var aiOptions = [ "rock",
 var icon = document.querySelectorAll('i');
 var p = document.getElementById("message")
 
-var index = Math.floor(Math.random() * aiOptions.length);
-
-function play(){
-    for(let i = 3; i < 6; i++){
-        if(icon[i].classList.contains(aiOptions[index]) == false){
-            console.log(aiOptions[index])
-            icon[i].style.visibility = 'hidden'
-        }
-    }
-    if (aiOptions[index] == "rock" && playerChoice == "paper") {
-        aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
-    }
-    if (aiOptions[index] == "paper" && playerChoice == "scissors") {
-        aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
-    }
-    if (aiOptions[index] == "scissors" && playerChoice == "rock") {
-        aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
-    } 
-    if (aiOptions[index] == "scissors" && playerChoice == "paper") {
-        aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
-    }
-    if (aiOptions[index] == "paper" && playerChoice == "rock") {
-        aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
-    }
-    if (aiOptions[index] == "rock" && playerChoice == "rock") {
-        aiChoice = "its a draw " + aiOptions[index], + playerChoice;
-    }
-    if (aiOptions[index] == "paper" && playerChoice == "paper") {
-        aiChoice = "its a draw " + aiOptions[index], + playerChoice;
-    }
-    if (aiOptions[index] == "scissors" && playerChoice == "scissors") {
-        aiChoice = "its a draw " + aiOptions[index], + playerChoice;
-    }
-    // display message
-    p.innerHTML = aiChoice
-    
+if (aiOptions[index] == "rock" && playerChoice == "paper") {
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
 }
+if (aiOptions[index] == "paper" && playerChoice == "scissors") {
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+}
+if (aiOptions[index] == "scissors" && playerChoice == "rock") {
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+} 
+if (aiOptions[index] == "scissors" && playerChoice == "paper") {
+    aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
+}
+if (aiOptions[index] == "paper" && playerChoice == "rock") {
+    aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
+}
+if (aiOptions[index] == "rock" && playerChoice == "scissors") {
+    aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+}
+if (aiOptions[index] == "rock" && playerChoice == "rock") {
+    aiChoice = "its a draw " + aiOptions[index], + playerChoice;
+}
+if (aiOptions[index] == "paper" && playerChoice == "paper") {
+    aiChoice = "its a draw " + aiOptions[index], + playerChoice;
 
 //validate players move
 function playerChooses(element){
@@ -71,4 +57,4 @@ function changeColor(element){
             icon[i].style.visibility = 'hidden'
         }
     }
-}
+}}
