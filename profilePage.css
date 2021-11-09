@@ -1,0 +1,20 @@
+body{
+    color: cornsilk;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: cornsilk;
+    font-family: 'Quicksand', sans-serif;
+}
+div{
+    background: rgb(7, 141, 137);
+    background: linear-gradient(90deg, rgb(7, 141, 137) 37%, rgba(0,212,255,1) 100%);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 2%;
+}
+img{
+    padding-top: 20px;
+    border-radius: 70%;
+    width:40%;
+}
