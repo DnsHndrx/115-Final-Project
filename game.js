@@ -1,5 +1,4 @@
-
-var playerChoice = "rock";
+var playerChoice = null;
 var aiChoice = null;
 
 var aiOptions = [ "rock",
@@ -12,6 +11,7 @@ var p = document.getElementById("message")
 var index = Math.floor(Math.random() * aiOptions.length);
 
 function play(){
+    if(playerChoice !== null){
     for(let i = 3; i < 6; i++){
         if(icon[i].classList.contains(aiOptions[index]) == false){
             console.log(aiOptions[index])
@@ -19,29 +19,35 @@ function play(){
         }
     }
     if (aiOptions[index] == "rock" && playerChoice == "paper") {
-        aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+        aiChoice = `Yes, ${playerChoice} wins!`;
     }
     if (aiOptions[index] == "paper" && playerChoice == "scissors") {
-        aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+        aiChoice = `Yes, ${playerChoice} wins!`;
     }
     if (aiOptions[index] == "scissors" && playerChoice == "rock") {
-        aiChoice = "Yes! You won! " + aiOptions[index], + playerChoice;
+        aiChoice = `Yes, ${playerChoice} wins!`;
     } 
     if (aiOptions[index] == "scissors" && playerChoice == "paper") {
-        aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
+        aiChoice = `Sorry, ${playerChoice} loses.`;
     }
     if (aiOptions[index] == "paper" && playerChoice == "rock") {
-        aiChoice = "Sorry. You lose " + aiOptions[index], + playerChoice;
+        aiChoice = `Sorry, ${playerChoice} loses.`;
     }
     if (aiOptions[index] == "rock" && playerChoice == "rock") {
-        aiChoice = "its a draw " + aiOptions[index], + playerChoice;
+        aiChoice = `It's a draw.`;
     }
     if (aiOptions[index] == "paper" && playerChoice == "paper") {
-        aiChoice = "its a draw " + aiOptions[index], + playerChoice;
+        aiChoice = `It's a draw.`;
     }
     if (aiOptions[index] == "scissors" && playerChoice == "scissors") {
-        aiChoice = "its a draw " + aiOptions[index], + playerChoice;
+        aiChoice = `It's a draw.`;
     }
+    if (aiOptions[index] == "rock" && playerChoice == "scissors") {
+        aiChoice = `Sorry, ${playerChoice} loses.`;
+    }
+} else {
+    aiChoice = "No move selected, Please retry."
+}
     // display message
     p.innerHTML = aiChoice
     
@@ -58,8 +64,6 @@ function playerChooses(element){
     } else if(element.matches('.clicked.scissors')) {
         playerChoice = 'scissors'
         console.log('this is scissors move')
-    } else {
-        playerChoice = null;
     }
 }
 

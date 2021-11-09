@@ -11,10 +11,17 @@ div{
     background: linear-gradient(90deg, rgb(7, 141, 137) 37%, rgba(0,212,255,1) 100%);
     padding-left: 10px;
     padding-right: 20px;
-    padding-bottom: 2%;
+    padding-bottom: .25%;
 }
 img{
-    padding-top: 20px;
-    border-radius: 70%;
+    padding-top: 10px;
+    border-radius: 50%;
     width:40%;
+    margin-right: 100px;
+}
+a{
+    float: left;
+    text-decoration: cornsilk underline;
+    color: cornsilk;
+    padding-left: 5px;
 }
