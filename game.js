@@ -10,6 +10,7 @@ var icon = document.querySelectorAll('i');
 var p = document.getElementById("message")
 
 var index = Math.floor(Math.random() * aiOptions.length);
+
 function play(){
     for(let i = 3; i < 6; i++){
         if(icon[i].classList.contains(aiOptions[index]) == false){
@@ -41,12 +42,12 @@ function play(){
     if (aiOptions[index] == "scissors" && playerChoice == "scissors") {
         aiChoice = "its a draw " + aiOptions[index], + playerChoice;
     }
-    message.innerHTML = aiChoice
+    // display message
+    p.innerHTML = aiChoice
     
-    console.log(aiOptions[index])
-    console.log(aiChoice)
 }
 
+//validate players move
 function playerChooses(element){
     if(element.matches('.clicked.rock')){
         playerChoice = 'rock';
@@ -54,14 +55,15 @@ function playerChooses(element){
     } else if(element.matches('.clicked.paper')){
         playerChoice = 'paper'
         console.log('this is paper move')
-    } else {
+    } else if(element.matches('.clicked.scissors')) {
         playerChoice = 'scissors'
         console.log('this is scissors move')
+    } else {
+        playerChoice = null;
     }
 }
 
-console.log(playerChoice)
-
+//show only users move
 function changeColor(element){
     element.classList.add('clicked')
     for(let i = 0; i < 3; i++){
