@@ -131,3 +131,16 @@ text-align: center;
 .space2:focus {
 	outline: none;
 }
+
+.ions{
+
+height: 50px;
+width: 50px;
+
+margin-right: 20px;
+float: right;
+display: inline-flex;
+flex-direction: row;
+margin-top: -50px;
+
+}
