@@ -92,5 +92,23 @@ function myFunction() {
     p.style.textDecoration = 'line-through';
 }
 
+function playerNames() {
+    let storage= document.querySelectorAll('.players');
+    let a= document.querySelector('.aTag');
+    let storedInput= localStorage.getItem('textinput');
+
+    if(storage){
+        text.textContent=storedInput
+    }
+
+    storage.addEventListener('input', letter =>{
+        text.textContent = letter.target.value
+    })
+    let saveToLocalStorage=() =>{
+        localStorage.setItem('textinput', text.textContent)
+    }
+    a.addEventListener('click',saveToLocalStorage)
+}
+
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
