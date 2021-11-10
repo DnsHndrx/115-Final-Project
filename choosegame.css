@@ -89,9 +89,10 @@ body {
 		5px -5px 0 black;
 	transition: 500ms ease-in-out;
     margin-top: 25px;
- margin-left: 300px;
+margin-left: 400px;
 text-decoration: none;
 text-align: center;
+margin-bottom: -73px;
 
 }
 
@@ -144,3 +145,14 @@ flex-direction: row;
 margin-top: -50px;
 
 }
+
+
+.next{
+
+
+float: left;
+display: flex;
+flex-direction: row;
+
+}
+
