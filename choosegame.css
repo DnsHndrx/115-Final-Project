@@ -89,9 +89,10 @@ body {
 		5px -5px 0 black;
 	transition: 500ms ease-in-out;
     margin-top: 25px;
- margin-left: 300px;
+margin-left: 400px;
 text-decoration: none;
 text-align: center;
+margin-bottom: -73px;
 
 }
 
@@ -148,6 +149,20 @@ margin-left: 20px;
 	border-radius: 5px;
 }
 
+
+
+
+
+.next{
+
+
+float: left;
+display: flex;
+flex-direction: row;
+
+}
+
+
 #sign_up:hover {
 	background-color: #087ee1
 }
@@ -162,3 +177,4 @@ margin-left: 20px;
 	color: black;
 	margin-left: 44%;
 }
+
