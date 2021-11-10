@@ -14,7 +14,6 @@ function play(){
     if(playerChoice !== null){
     for(let i = 3; i < 6; i++){
         if(icon[i].classList.contains(aiOptions[index]) == false){
-            console.log(aiOptions[index])
             icon[i].style.visibility = 'hidden'
         }
     }
@@ -57,13 +56,10 @@ function play(){
 function playerChooses(element){
     if(element.matches('.clicked.rock')){
         playerChoice = 'rock';
-        console.log('this is rock move')
     } else if(element.matches('.clicked.paper')){
         playerChoice = 'paper'
-        console.log('this is paper move')
     } else if(element.matches('.clicked.scissors')) {
         playerChoice = 'scissors'
-        console.log('this is scissors move')
     }
 }
 

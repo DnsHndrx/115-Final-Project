@@ -132,15 +132,32 @@ text-align: center;
 	outline: none;
 }
 
-.ions{
-
+.ions {
 height: 50px;
 width: 50px;
-
 margin-right: 20px;
-float: right;
-display: inline-flex;
-flex-direction: row;
-margin-top: -50px;
+margin-left: 20px;
+}
 
+#sign_up {
+	background-color: #fff;
+	padding: 5px 10px;
+	color: #02090c;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+#sign_up:hover {
+	background-color: #087ee1
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+.llog{
+	text-decoration: black underline;
+	color: black;
+	margin-left: 44%;
 }
