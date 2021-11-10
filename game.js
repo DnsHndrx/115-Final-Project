@@ -1,5 +1,6 @@
 var playerChoice = null;
 var aiChoice = null;
+var counter = localStorage.rock_counter
 
 var aiOptions = [ "rock",
 "paper",
@@ -19,12 +20,19 @@ function play(){
     }
     if (aiOptions[index] == "rock" && playerChoice == "paper") {
         aiChoice = `Yes, ${playerChoice} wins!`;
+        //update counter
+        counter = eval(`${counter} + 1`)
+        localStorage.rock_counter = counter
     }
     if (aiOptions[index] == "paper" && playerChoice == "scissors") {
         aiChoice = `Yes, ${playerChoice} wins!`;
+        counter = eval(`${counter} + 1`)
+        localStorage.rock_counter = counter
     }
     if (aiOptions[index] == "scissors" && playerChoice == "rock") {
         aiChoice = `Yes, ${playerChoice} wins!`;
+        counter = eval(`${counter} + 1`)
+        localStorage.rock_counter = counter
     } 
     if (aiOptions[index] == "scissors" && playerChoice == "paper") {
         aiChoice = `Sorry, ${playerChoice} loses.`;
