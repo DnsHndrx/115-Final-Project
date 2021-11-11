@@ -134,11 +134,12 @@ text-align: center;
 }
 
 .ions {
-height: 50px;
-width: 50px;
+font-size: 50px;
 margin-right: 20px;
 margin-left: 20px;
 }
+
+
 
 #sign_up {
     background-color: #fff;
@@ -147,6 +148,27 @@ margin-left: 20px;
     color: #02090c;
     text-decoration: none;
     border-radius: 5px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#sign_up:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.llog{
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    color: #02090c;
+    text-decoration: none;
+    border-radius: 5px;
+	border: 1px solid #02090c;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.llog:hover {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
@@ -171,9 +193,5 @@ flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: right;
-}
-.llog{
-    text-decoration: black underline;
-    color: black;
-    margin-left: 44%;
+	padding: 10px;
 }
