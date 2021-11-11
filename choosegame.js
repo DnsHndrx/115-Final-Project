@@ -3,10 +3,10 @@ let head = document.getElementsByClassName('head')[0]
 let logout = document.getElementsByClassName('llog')[0]
 
 window.addEventListener('load', (event) => {
-    if(localStorage.length == 0){
+    if(localStorage.length < 2){
         head.style.overflow = 'hidden'
         profile.style.display = 'none'
-    } else if(localStorage.length > 0){
+    } else if(localStorage.length > 2){
         profile.style.display = 'block'
     }
 });
