@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="tictacAi.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Raleway:wght@100&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 style="margin-left: 10px;" class="glowhead">Tic Tac Toe</h1>
+	<section>
+		<table style="margin-top: 150px; margin-right: 500px;">
+			<tr>
+				<td class="cell" id="0"></td>
+				<td class="cell" id="1"></td>
+				<td class="cell" id="2"></td>
+			</tr>
+			<tr>
+				<td class="cell" id="3"></td>
+				<td class="cell" id="4"></td>
+				<td class="cell" id="5"></td>
+			</tr>
+			<tr>
+				<td class="cell" id="6"></td>
+				<td class="cell" id="7"></td>
+				<td class="cell" id="8"></td>
+			</tr>
+		</table>
+		<div class="endgame">
+			<div class="text"></div>
+		</div>
+		<button class="restart game--restart" onClick="startGame()" style="margin-top: 450px;">Replay</button>
+	</section>
+
+  <script src="tictacAi.js"></script>
+</body>
+</html>
