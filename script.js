@@ -1,8 +1,21 @@
 const statusDisplay = document.querySelector('.game--status');
 
+let player_one = document.getElementsByClassName('players')[0]
+let player_two = document.getElementsByClassName('players')[1]
+let namesBtn = document.getElementsByClassName('names')[0]
+
+let count = localStorage.tic_tac_counter
+
+
+
 let gameActive = true;
 
-let currentPlayer = "X";
+let currentPlayer= '';
+
+namesBtn.addEventListener('click', function(){
+    currentPlayer = player_one.value
+    statusDisplay.innerHTML = currentPlayerTurn();
+})
 
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
@@ -10,7 +23,6 @@ const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
-statusDisplay.innerHTML = currentPlayerTurn();
 function handleCellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
 
@@ -27,9 +39,13 @@ function handleCellClick(clickedCellEvent) {
 }
 
 function handleCellPlayed(clickedCell, clickedCellIndex) {
-
-    gameState[clickedCellIndex] = currentPlayer;
-    clickedCell.innerHTML = currentPlayer;
+    if(currentPlayer == player_one.value){
+        gameState[clickedCellIndex] = "X";
+        clickedCell.innerHTML = "X";
+    } else if (currentPlayer == player_two.value){
+        gameState[clickedCellIndex] = "O";
+        clickedCell.innerHTML = "O";
+    }
 }
 
 const winningConditions = [
@@ -59,6 +75,8 @@ function handleResultValidation() {
     }
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
+        // add win counter
+        localStorage.tic_tac_counter = eval(`${count} + 1`)
         gameActive = false;
         return;
     }
@@ -74,13 +92,13 @@ function handleResultValidation() {
 }
 
 function handlePlayerChange() {
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    currentPlayer = currentPlayer === player_one.value ? player_two.value : player_one.value;
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 
 function handleRestartGame() {
     gameActive = true;
-    currentPlayer = "X";
+    currentPlayer = player_one.value;
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell')
@@ -90,24 +108,6 @@ function handleRestartGame() {
 function myFunction() {
     var p = document.getElementsByClassName('cell')
     p.style.textDecoration = 'line-through';
-}
-
-function playerNames() {
-    let storage= document.querySelectorAll('.players');
-    let a= document.querySelector('.aTag');
-    let storedInput= localStorage.getItem('textinput');
-
-    if(storage){
-        text.textContent=storedInput
-    }
-
-    storage.addEventListener('input', letter =>{
-        text.textContent = letter.target.value
-    })
-    let saveToLocalStorage=() =>{
-        localStorage.setItem('textinput', text.textContent)
-    }
-    a.addEventListener('click',saveToLocalStorage)
 }
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
