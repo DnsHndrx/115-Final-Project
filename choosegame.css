@@ -53,14 +53,14 @@ display: flex;
 
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
 
-	background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+    background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
 }
 
 .noselect {
@@ -70,24 +70,24 @@ body {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-		-webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: transparent;
 
     }
 
 .space1 {
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-	background: white;
-	border: 2px solid black;
-	box-shadow: 5px 5px 0 black,
-		-5px -5px 0 black,
-		-5px 5px 0 black,
-		5px -5px 0 black;
-	transition: 500ms ease-in-out;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black,
+        -5px -5px 0 black,
+        -5px 5px 0 black,
+        5px -5px 0 black;
+    transition: 500ms ease-in-out;
     margin-top: 25px;
 margin-left: 300px;
 text-decoration: none;
@@ -97,27 +97,27 @@ margin-bottom: -73px;
 }
 
 .space1:hover {
-	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+    box-shadow: 20px 5px 0 black, -20px -5px 0 black;
 }
 
 .space1:focus {
-	outline: none;
+    outline: none;
 }
 
 .space2 {
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-	background: white;
-	border: 2px solid black;
-	box-shadow: 5px 5px 0 black,
-		-5px -5px 0 black,
-		-5px 5px 0 black,
-		5px -5px 0 black;
-	transition: 500ms ease-in-out;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black,
+        -5px -5px 0 black,
+        -5px 5px 0 black,
+        5px -5px 0 black;
+    transition: 500ms ease-in-out;
     margin-top: 25px;
  margin-left: 250px;
 text-decoration: none;
@@ -126,11 +126,11 @@ text-align: center;
 }
 
 .space2:hover {
-	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+    box-shadow: 20px 5px 0 black, -20px -5px 0 black;
 }
 
 .space2:focus {
-	outline: none;
+    outline: none;
 }
 
 .ions {
@@ -141,12 +141,12 @@ margin-left: 20px;
 }
 
 #sign_up {
-	background-color: #fff;
-	padding: 5px 10px;
-	margin: 5px 15px;
-	color: #02090c;
-	text-decoration: none;
-	border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    color: #02090c;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 
@@ -164,17 +164,16 @@ flex-direction: row;
 
 
 #sign_up:hover {
-	background-color: #087ee1
+    background-color: #087ee1
 }
 
 .head {
-	display: flex;
-	align-items: center;
-	justify-content: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 .llog{
-	text-decoration: black underline;
-	color: black;
-	margin-left: 44%;
+    text-decoration: black underline;
+    color: black;
+    margin-left: 44%;
 }
-
