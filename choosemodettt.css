@@ -1,0 +1,50 @@
+body{
+    background: rgb(58,180,80);
+    background: linear-gradient(90deg, rgba(58,180,80,1) 0%, rgba(29,252,253,1) 50%, rgba(130,69,252,1) 100%);
+    text-align: center;
+}
+img{
+    border: whitesmoke 8px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+a{
+    text-align: center;
+    text-decoration: whitesmoke underline;
+    font-size: 40px;
+    font-family: 'Lateef', cursive;
+    color: whitesmoke;
+    border: whitesmoke 4px solid;
+    border-radius: 20px;
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+.modes{
+    display: inline-flex;
+}
+
+.modeOne{
+    display: flex;
+    flex-direction: column;
+}
+
+.modeTwo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+.modeTwo img{
+    width: 281px;
+}
+.modeTwo a{
+    margin-right: 120px;
+}
