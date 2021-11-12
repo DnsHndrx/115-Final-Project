@@ -119,7 +119,7 @@ margin-bottom: -73px;
 		5px -5px 0 black;
 	transition: 500ms ease-in-out;
     margin-top: 25px;
- margin-left: 250px;
+
 text-decoration: none;
 text-align: center;
 
@@ -156,3 +156,12 @@ flex-direction: row;
 
 }
 
+.next{
+
+
+	float: left;
+	display: flex;
+	flex-direction: row;
+	
+	}
+	
