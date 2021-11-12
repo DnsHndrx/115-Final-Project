@@ -1,0 +1,223 @@
+<html>
+<head>
+   <style>
+body{
+    background-color: black;
+}
+
+
+   </style> 
+
+</head>
+<body>
+
+
+<p style="font-size: 50px; color: #2594c4; font-family: 'Press Start 2P', cursive; font-size: 75px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center; margin-top: 350px; ">Player 1 Score: <span id="score1"></span></p>
+
+<p style="font-size: 50px; color: #1e8ab8; font-family: 'Press Start 2P', cursive; font-size: 75px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center; padding-top: 30px;">Player 2 Score: <span id="score2"></span></p>
+
+
+
+<script>
+    
+
+
+setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+
+ 
+    compare(user1,user2)
+    
+},1000)
+ 
+
+
+
+  let player1score = 0
+  let player2score = 0
+
+  let score1= document.getElementById("score1");
+  let score2= document.getElementById("score2")
+ 
+    
+    
+
+    function compare(choice1, choice2){
+  
+
+
+
+
+        if((choice1!="rock")&&(choice1!="paper")&&(choice1!="scissors")){
+            alert(" User 1 that is not a valid answer retry")
+            setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    
+    compare(user1,user2)
+    
+},1000)  
+    }
+        if ((choice2!="rock")&&(choice2!="paper")&&(choice2!="scissors")&&(choice2!="restart")){
+            alert(" User 2 that is not a valid answer retry")
+            setTimeout(function(){
+    
+    
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+        }
+        
+    
+    
+        if(choice1===choice2)
+    {
+         alert("You guys tied");
+        
+
+
+
+
+
+         setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+    }
+  
+    
+
+    if (choice1 == "rock" || choice1 == "paper" || choice1 == "scissors"){
+    
+        {
+             if(choice1==="rock")
+             {
+                 if(choice2==="scissors")
+                 {
+
+                    player1score++
+                    score1.innerHTML=player1score
+
+                    alert("Player 1 wins! They choose rock");
+                    setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+                    }
+                 if(choice2==="paper")
+                 {
+                    player2score++
+                    score2.innerHTML=player2score
+
+                    alert("Player 2 wins! They choose paper");
+    
+                    setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+                 
+                 
+                    }
+             }
+             if(choice1==="paper")
+             {
+                 if(choice2==="rock")
+                 {
+                    player1score++
+                    score1.innerHTML=player1score  
+                    alert("Player 1 wins! They choose paper");
+                      setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)            
+                    }
+                 if(choice2==="scissors")
+                 {
+                    player2score++
+                    score2.innerHTML=player2score
+                      alert("Player 2 wins! They choose scissors");
+                      setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+                    }
+             }
+             if(choice1==="scissors")
+             {
+                 if(choice2==="paper")
+                 {
+                    player1score++
+                    score1.innerHTML=player1score  
+                    alert("Player 1 wins! They choose scissors");
+                      setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+                    }
+                 if(choice2==="rock")
+                 {
+                    player2score++
+                    score2.innerHTML=player2score
+                    alert("Player 2 wins! They choose rock");
+                    setTimeout(function(){
+    
+    var user1 = prompt("Player 1, Pick rock, paper or scissors please");
+    var user2 = prompt("Player 2, Pick rock, paper or scissors please");
+    compare(user1,user2)
+    
+},1000)
+                    }
+             }
+          }
+     }
+
+    }   
+    
+       
+   
+ 
+
+    
+    
+    
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
