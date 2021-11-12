@@ -157,7 +157,7 @@ margin-left: 20px;
 
 .llog{
     background-color: transparent;
-    padding: 5px 10px;
+    padding: 5px 5px;
     margin: 5px 15px;
     color: #02090c;
     text-decoration: none;
@@ -181,15 +181,13 @@ margin-left: 20px;
 float: left;
 display: flex;
 flex-direction: row;
-
 }
 
-.next{
-
-
-	float: left;
+.head{
 	display: flex;
 	flex-direction: row;
-	
-	}
+	justify-content: right;
+	margin: 10px 15px;
+	align-items: center;
+}
 	
