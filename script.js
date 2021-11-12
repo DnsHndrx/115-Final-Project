@@ -76,7 +76,9 @@ function handleResultValidation() {
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         // add win counter
-        localStorage.tic_tac_counter = eval(`${count} + 1`)
+        if(statusDisplay.innerHTML.includes(player_one.value) == true){
+            localStorage.tic_tac_counter = eval(`${count} + 1`)
+        }
         gameActive = false;
         return;
     }
