@@ -133,18 +133,24 @@ text-align: center;
 	outline: none;
 }
 
-.ions{
-
+.ions {
 height: 50px;
 width: 50px;
-
 margin-right: 20px;
-float: right;
-display: inline-flex;
-flex-direction: row;
-margin-top: -50px;
-
+margin-left: 20px;
 }
+
+#sign_up {
+	background-color: #fff;
+	padding: 5px 10px;
+	margin: 5px 15px;
+	color: #02090c;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+
+
 
 
 .next{
